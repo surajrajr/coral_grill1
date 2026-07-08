@@ -14,6 +14,7 @@
         <a href="#menu">Menu</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
+        <a href="#register">Register</a>
     </nav>
 </header>
 
@@ -83,6 +84,36 @@
 
 <p id="location"></p>
 </section>
+<section id="register">
+
+<h2>Registration</h2>
+
+<form id="regForm">
+
+<input type="text" id="name" placeholder="Enter Name" required><br>
+
+<input type="password" id="password" placeholder="Password" required><br>
+
+<input type="email" id="email" placeholder="Email" required><br>
+
+<input type="date" id="dob" required><br>
+
+<input type="file" id="photo"><br>
+
+<select id="food">
+<option>Select Food</option>
+<option>Burger</option>
+<option>Pizza</option>
+<option>Pasta</option>
+</select><br><br>
+
+<button type="button" onclick="showData()">Register</button>
+
+</form>
+
+<div id="card"></div>
+
+</section>
 <a href="#popup">
     <button>Special Offer</button>
 </a>
@@ -128,6 +159,38 @@ function showPosition(position) {
 
 }
 </script>
+<script>
 
+const showData = () => {
+
+let name = document.getElementById("name").value;
+let password = document.getElementById("password").value;
+let email = document.getElementById("email").value;
+let dob = document.getElementById("dob").value;
+let food = document.getElementById("food").value;
+
+if(name=="" || password=="" || email=="" || dob=="" || food=="Select Food")
+{
+alert("Please fill all fields");
+return;
+}
+
+localStorage.setItem("Name",name);
+localStorage.setItem("Email",email);
+localStorage.setItem("Food",food);
+
+document.getElementById("card").innerHTML=
+
+"<div class='userCard'>"+
+"<h3>Registration Details</h3>"+
+"<p><b>Name :</b> "+name+"</p>"+
+"<p><b>Email :</b> "+email+"</p>"+
+"<p><b>Date :</b> "+dob+"</p>"+
+"<p><b>Food :</b> "+food+"</p>"+
+"</div>";
+
+}
+
+</script>
 </body>
 </html>
