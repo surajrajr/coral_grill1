@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+header{
+    background:#333;
+    color:white;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+
+section{
+    padding:30px;
+}
+
+#home img{
+    width:80%;
+    border-radius:10px;
+}
+
+.card{
+    display:inline-block;
+    width:200px;
+    margin:10px;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+#gallery img{
+    width:220px;
+    margin:10px;
+    border-radius:10px;
+}
+
+input,textarea{
+    width:250px;
+    padding:8px;
+    margin:8px;
+}
+
+button{
+    padding:10px 20px;
+    background:orange;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+footer{
+    background:#333;
+    color:white;
+    padding:15px;
+}
