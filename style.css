@@ -103,3 +103,38 @@ footer{
     text-align:center;
     border-radius:10px;
 }
+#register{
+    padding:30px;
+}
+
+select{
+    width:270px;
+    padding:8px;
+    margin:8px;
+}
+
+.userCard{
+    width:300px;
+    margin:20px auto;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+@media(max-width:600px){
+
+.menu-container{
+flex-direction:column;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+nav a{
+display:block;
+margin:8px;
+}
+
+}
